@@ -1,0 +1,51 @@
+# ==========================================
+# GIT COMMANDS FOR DAILY-MACHINE-LEARNING-
+# ==========================================
+# (Run these commands in PowerShell)
+
+# ------------------------------------------
+# OPTION 1: Clone the Repo, Add Files, and Push
+# ------------------------------------------
+
+# 1. Navigate to your GitHub directory
+cd D:\GitHub
+
+# 2. Clone the repository (note the trailing hyphen in the URL)
+git clone https://github.com/AnshumanTiwari2006/Daily-Machine-Learning-.git
+
+# 3. Enter the cloned directory
+cd Daily-Machine-Learning-
+
+# 4. Stage your changes (after adding or modifying files in this folder)
+git add .
+
+# 5. Commit the changes
+git commit -m "Add local files to repo"
+
+# 6. Push to GitHub (the default branch is 'main')
+git push -u origin main
+
+
+# ------------------------------------------
+# OPTION 2: Initialize Git in an Existing Folder and Push
+# ------------------------------------------
+
+# 1. Enter the existing folder
+cd D:\GitHub\Daily-Machine-Learning-
+
+# 2. Initialize a local git repository
+git init
+
+# 3. Add the remote URL (note the trailing hyphen)
+git remote add origin https://github.com/AnshumanTiwari2006/Daily-Machine-Learning-.git
+
+# 4. Rename the default branch to 'main'
+git branch -M main
+
+# 5. Pull any existing files from GitHub to sync up
+git pull origin main --rebase
+
+# 6. Stage, commit, and push your files
+git add .
+git commit -m "Initial upload"
+git push -u origin main
