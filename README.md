@@ -39,6 +39,10 @@ Adapting regression principles to predict distinct, categorical outcomes.
 ### 📏 5. Evaluation & Metrics
 - **[Regression Metrics](./Regression_Metrics/):** Exploring the mathematical intuition and practical code behind measuring model success, including $R^2$ Score, MAE, MSE, and RMSE.
 
+### 🧹 6. Data Preprocessing & Feature Engineering
+Preparing raw data for robust machine learning models.
+- **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
+
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
 
