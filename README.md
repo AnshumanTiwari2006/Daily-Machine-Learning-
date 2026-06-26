@@ -2,7 +2,7 @@
 
 Welcome to my **Daily Machine Learning** repository! I am a B.Tech graduate actively deep-diving into the mathematical foundations, theories, and code implementations of Machine Learning algorithms. 
 
-This repository serves as my personal pedagogical knowledge base. It contains self-authored Jupyter notebooks, from-scratch algorithmic implementations, and detailed theory notes covering my daily learnings.
+This repository serves as my personal pedagogical knowledge base. It contains Jupyter notebooks, from-scratch algorithmic implementations, and semi-detailed theory notes covering my daily learnings.
 
 ## 🎯 Repository Philosophy
 My goal here is not just to call `model.fit()` and `model.predict()` using out-of-the-box libraries, but to genuinely understand **how** and **why** these algorithms work under the hood. 
