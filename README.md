@@ -39,6 +39,8 @@ Adapting regression principles to predict distinct, categorical outcomes.
 ### 📏 5. Evaluation & Metrics
 - **[Regression Metrics](./Regression_Metrics/):** Exploring the mathematical intuition and practical code behind measuring model success, including $R^2$ Score, MAE, MSE, and RMSE.
 - **[Classification Metrics](./Metrics/):** Understanding how to evaluate classification models using Accuracy, the Confusion Matrix, and differentiating between Type I (False Positive) and Type II (False Negative) errors.
+- **[ROC Curve & AUC](./ROC_Curve/):** Visualizing and quantifying a model's ability to distinguish between classes across all possible classification thresholds.
+
 
 
 ### 🧹 6. Data Preprocessing & Feature Engineering
