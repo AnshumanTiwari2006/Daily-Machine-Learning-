@@ -38,6 +38,8 @@ Adapting regression principles to predict distinct, categorical outcomes.
 
 ### 📏 5. Evaluation & Metrics
 - **[Regression Metrics](./Regression_Metrics/):** Exploring the mathematical intuition and practical code behind measuring model success, including $R^2$ Score, MAE, MSE, and RMSE.
+- **[Classification Metrics](./Metrics/):** Understanding how to evaluate classification models using Accuracy, the Confusion Matrix, and differentiating between Type I (False Positive) and Type II (False Negative) errors.
+
 
 ### 🧹 6. Data Preprocessing & Feature Engineering
 Preparing raw data for robust machine learning models.
