@@ -47,6 +47,10 @@ Adapting regression principles to predict distinct, categorical outcomes.
 Preparing raw data for robust machine learning models.
 - **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
 
+### 🗜️ 7. Dimensionality Reduction
+Techniques for compressing high-dimensional data while retaining critical information.
+- **[Principal Component Analysis (PCA)](./Principal%20Component%20Analysis/):** Reducing feature space to combat the curse of dimensionality, vastly speeding up algorithms like KNN on complex datasets (e.g., Image processing).
+
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
 
