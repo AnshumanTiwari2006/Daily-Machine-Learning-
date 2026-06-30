@@ -47,6 +47,7 @@ Adapting regression principles to predict distinct, categorical outcomes.
 Preparing raw data for robust machine learning models.
 - **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
 - **[Feature Scaling](./Feature%20Scaling/):** Leveling the mathematical playing field for gradient descent and distance-based algorithms using Standardization (Z-score) and Normalization (Min-Max scaling).
+- **[Transformers](./Transformer/):** Mathematical transformations (Function, Power, Box-Cox, Yeo-Johnson) to enforce Gaussian distributions, and architectural `ColumnTransformer` pipelines for modular preprocessing.
 
 
 ### 🗜️ 7. Dimensionality Reduction
