@@ -46,6 +46,8 @@ Adapting regression principles to predict distinct, categorical outcomes.
 ### 🧹 6. Data Preprocessing & Feature Engineering
 Preparing raw data for robust machine learning models.
 - **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
+- **[Feature Scaling](./Feature%20Scaling/):** Leveling the mathematical playing field for gradient descent and distance-based algorithms using Standardization (Z-score) and Normalization (Min-Max scaling).
+
 
 ### 🗜️ 7. Dimensionality Reduction
 Techniques for compressing high-dimensional data while retaining critical information.
