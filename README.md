@@ -50,6 +50,7 @@ Preparing raw data for robust machine learning models.
 - **[Feature Scaling](./Feature%20Scaling/):** Leveling the mathematical playing field for gradient descent and distance-based algorithms using Standardization (Z-score) and Normalization (Min-Max scaling).
 - **[Transformers](./Transformer/):** Mathematical transformations (Function, Power, Box-Cox, Yeo-Johnson) to enforce Gaussian distributions, and architectural `ColumnTransformer` pipelines for modular preprocessing.
 - **[Encoders](./Encoder/):** Translating raw categorical text into machine-readable numeric matrices using One-Hot Encoding (for nominal data) and Ordinal/Label Encoding (for ranked data).
+- **[Binning & Binarization](./Binning%20&%20Binarization/):** Discretizing continuous numeric data into grouped intervals (using Quantile, Uniform, and K-Means strategies) or strict binary thresholds.
 
 
 ### 🗜️ 7. Dimensionality Reduction
