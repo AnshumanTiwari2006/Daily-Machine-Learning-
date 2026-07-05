@@ -51,6 +51,7 @@ Preparing raw data for robust machine learning models.
 - **[Transformers](./Transformer/):** Mathematical transformations (Function, Power, Box-Cox, Yeo-Johnson) to enforce Gaussian distributions, and architectural `ColumnTransformer` pipelines for modular preprocessing.
 - **[Encoders](./Encoder/):** Translating raw categorical text into machine-readable numeric matrices using One-Hot Encoding (for nominal data) and Ordinal/Label Encoding (for ranked data).
 - **[Binning & Binarization](./Binning%20&%20Binarization/):** Discretizing continuous numeric data into grouped intervals (using Quantile, Uniform, and K-Means strategies) or strict binary thresholds.
+- **[Pipelines](./Pipeline/):** Architecting end-to-end, leak-proof machine learning workflows that seamlessly chain preprocessing transformers (Imputation, Scaling, Encoding) directly into predictive models.
 
 
 ### 🗜️ 7. Dimensionality Reduction
