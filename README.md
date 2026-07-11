@@ -50,6 +50,7 @@ Preparing raw data for robust machine learning models.
 - **[Handling Missing Data](./Handling%20Missing%20Data/):** Comprehensive strategies for dealing with NaNs, ranging from Complete Case Analysis (deletion) to advanced algorithmic multivariate imputation (KNN, Iterative/MICE).
 - **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
 - **[Feature Construction](./Feature%20Construction/):** The manual engineering of brand-new, highly predictive features by mathematically combining or deconstructing existing raw data.
+- **[Date-Time Features](./Date-Time/):** Parsing complex temporal strings and extracting predictive numerical features (Months, Days, Weekends, Time Deltas) using Pandas `dt` accessors.
 - **[Feature Scaling](./Feature%20Scaling/):** Leveling the mathematical playing field for gradient descent and distance-based algorithms using Standardization (Z-score) and Normalization (Min-Max scaling).
 - **[Transformers](./Transformer/):** Mathematical transformations (Function, Power, Box-Cox, Yeo-Johnson) to enforce Gaussian distributions, and architectural `ColumnTransformer` pipelines for modular preprocessing.
 - **[Encoders](./Encoder/):** Translating raw categorical text into machine-readable numeric matrices using One-Hot Encoding (for nominal data) and Ordinal/Label Encoding (for ranked data).
