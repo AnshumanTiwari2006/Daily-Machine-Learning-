@@ -46,7 +46,8 @@ Adapting regression principles to predict distinct, categorical outcomes.
 
 ### 🧹 6. Data Preprocessing & Feature Engineering
 Preparing raw data for robust machine learning models.
-- **[Pandas Profiling (EDA)](./Pandas%20Profiling/):** Automating Exploratory Data Analysis to instantly generate interactive HTML reports detailing missing values, correlations, and feature distributions.
+- **[Manual EDA](./Exploratory_Data_Analysis/):** Mathematically and visually investigating raw data using Univariate (Histograms, Boxplots) and Multivariate (Scatter plots, Heatmaps) analysis via Seaborn and Matplotlib.
+- **[Pandas Profiling (Automated EDA)](./Pandas%20Profiling/):** Automating Exploratory Data Analysis to instantly generate interactive HTML reports detailing missing values, correlations, and feature distributions.
 - **[Handling Missing Data](./Handling%20Missing%20Data/):** Comprehensive strategies for dealing with NaNs, ranging from Complete Case Analysis (deletion) to advanced algorithmic multivariate imputation (KNN, Iterative/MICE).
 - **[Outlier Detection methods](./Outlier%20Detection%20methods/):** Statistical approaches to identify and handle anomalies, including Z-score (for normal distributions), IQR (for skewed data), and Percentile-based capping/trimming.
 - **[Feature Construction](./Feature%20Construction/):** The manual engineering of brand-new, highly predictive features by mathematically combining or deconstructing existing raw data.
