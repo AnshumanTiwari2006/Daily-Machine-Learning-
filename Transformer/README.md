@@ -1,4 +1,4 @@
-# 🔄 Data Transformers (Scikit-Learn)
+# 🔄 Data Transformers
 
 Welcome to the **Transformers** module! In real-world datasets, raw data is rarely perfect. Features often exhibit heavy skewed distributions (right or left skew) rather than a clean normal distribution, and different columns inherently require entirely different preprocessing steps.
 
