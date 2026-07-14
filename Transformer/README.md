@@ -33,7 +33,7 @@ In this module, we cover:
 ### 3. [`Column_Transformer_Cleaned.ipynb`](Column_Transformer_Cleaned.ipynb)
 **Goal:** Elevate preprocessing from messy scripts to clean, modular, production-ready pipelines.
 * **The Problem:** In a standard dataset, an `Age` column might require SimpleImputer + StandardScaler, a `Gender` column might require OneHotEncoder, and a `Salary` column might require a PowerTransformer. Doing this sequentially in Pandas is messy and leads to data leakage.
-* **The Solution:** We implement Scikit-Learn's `ColumnTransformer` to route distinct columns through specific, parallel transformation pipelines, ultimately concatenating the outputs into a single, model-ready matrix array.
+* **The Solution:** We implement Scikit-Learn's `ColumnTransformer` to route distinct columns through specific, parallel transformation pipelines, ultimately concatenating the outputs into a single, model-ready matrix array...
 
 ## 🚀 Getting Started
 Launch the notebooks to master data transformations and pipeline architecture:
