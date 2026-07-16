@@ -46,6 +46,7 @@ Adapting regression principles to predict distinct, categorical outcomes.
 
 ### 🧹 6. Data Preprocessing & Feature Engineering
 Preparing raw data for robust machine learning models.
+- **[Data Ingestion & Formats](./Working_with_Different_Format/):** Parsing and extracting raw data from APIs (JSON), relational databases (SQL), and complex CSV files into flat Pandas DataFrames.
 - **[Manual EDA](./Exploratory_Data_Analysis/):** Mathematically and visually investigating raw data using Univariate (Histograms, Boxplots) and Multivariate (Scatter plots, Heatmaps) analysis via Seaborn and Matplotlib.
 - **[Pandas Profiling (Automated EDA)](./Pandas%20Profiling/):** Automating Exploratory Data Analysis to instantly generate interactive HTML reports detailing missing values, correlations, and feature distributions.
 - **[Handling Missing Data](./Handling%20Missing%20Data/):** Comprehensive strategies for dealing with NaNs, ranging from Complete Case Analysis (deletion) to advanced algorithmic multivariate imputation (KNN, Iterative/MICE).
