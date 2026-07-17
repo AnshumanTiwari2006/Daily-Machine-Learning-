@@ -65,6 +65,10 @@ Preparing raw data for robust machine learning models.
 Techniques for compressing high-dimensional data while retaining critical information.
 - **[Principal Component Analysis (PCA)](./Principal%20Component%20Analysis/):** Reducing feature space to combat the curse of dimensionality, vastly speeding up algorithms like KNN on complex datasets (e.g., Image processing).
 
+### 🎛️ 8. Hyperparameter Tuning
+Optimizing algorithm parameters to squeeze maximum performance out of machine learning models.
+- **[GridSearchCV](./GridSearchCV/):** Automating the exhaustive search over specified parameter values for an estimator, using Cross-Validation to ensure robust performance without data leakage.
+
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
 
