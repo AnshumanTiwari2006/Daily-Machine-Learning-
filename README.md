@@ -69,6 +69,10 @@ Techniques for compressing high-dimensional data while retaining critical inform
 Optimizing algorithm parameters to squeeze maximum performance out of machine learning models.
 - **[GridSearchCV](./GridSearchCV/):** Automating the exhaustive search over specified parameter values for an estimator, using Cross-Validation to ensure robust performance without data leakage.
 
+### 🤝 9. Ensemble Learning
+Combining the mathematical predictions of multiple distinct models to create a single, vastly superior meta-model.
+- **[Voting Ensemble](./Voting-Ensemble/):** Utilizing the "wisdom of the crowd" through Hard Voting (majority rule), Soft Voting (probability averaging), and Regressor averaging to cancel out individual model weaknesses.
+
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
 
