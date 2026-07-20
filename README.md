@@ -36,6 +36,7 @@ Adapting regression principles to predict distinct, categorical outcomes.
 - **[Logistic Regression](./Logistic_Regression/):** Explores the journey from primitive Perceptrons and Step Functions to the modern Sigmoid curve for binary classification probabilities.
 - **[Softmax Regression](./Softmax_Regression/):** (Multinomial Logistic Regression) Generalizing Logistic Regression to elegantly classify data into multiple, mutually exclusive categories.
 - **[K-Nearest Neighbors (KNN)](./KNN/):** A highly intuitive, distance-based algorithm relying on geometric proximity and strict feature scaling to classify data points based on their 'K' closest neighbors.
+- **[Decision Trees](./Decision_Tree/):** A non-linear, highly interpretable algorithm that mathematically partitions data using recursive "If-Else" rules based on Gini Impurity and Entropy.
 
 ### 📏 5. Evaluation & Metrics
 - **[Regression Metrics](./Regression_Metrics/):** Exploring the mathematical intuition and practical code behind measuring model success, including $R^2$ Score, MAE, MSE, and RMSE.
