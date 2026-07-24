@@ -16,12 +16,18 @@ Because each tree is trained on slightly different data, they make completely di
 
 ## 📂 Contents & Findings
 
-### [`Bagging_Part-1.ipynb`](Bagging_Part-1.ipynb)
+### 1. [`Bagging_Part-1.ipynb`](Bagging_Part-1.ipynb)
 **Goal:** Build and analyze a Bagging Classifier using Scikit-Learn to prove how it fundamentally dominates standalone models.
 
 * **The Process:** We explicitly train a standalone `DecisionTreeClassifier` and compare its decision boundaries against a `BaggingClassifier` (which uses hundreds of Decision Trees under the hood).
 * **Key Finding:** The standalone Decision Tree heavily overfits the training data, drawing jagged boundaries to capture mathematical noise. The Bagging Classifier, however, achieves a much smoother, robust decision boundary that dramatically increases accuracy on the unseen test set.
 * **Out-of-Bag (OOB) Score:** Because bootstrapping samples *with replacement*, mathematically, roughly 37% of the original data is *never seen* by any given tree. We demonstrate how to use this left-out data as a free, built-in validation set to measure model accuracy without strictly needing a train-test split (`oob_score=True`).
+
+### 2. [`Bagging_Part-2.ipynb`](Bagging_Part-2.ipynb)
+**Goal:** Explore the impact of using different base estimators (like Support Vector Machines) inside a Bagging architecture.
+
+* **The Process:** While Bagging is famous for using Decision Trees (which leads to Random Forests), the `BaggingClassifier` can actually accept *any* algorithm. We instantiate a Bagging Classifier using `SVC` (Support Vector Classifier) as the base estimator.
+* **Key Finding:** We analyze the computational cost and accuracy differences when bagging non-tree algorithms. We learn that while Bagging mathematically reduces the variance of *high-variance* models (like Trees), applying it to highly stable models (like SVMs) often yields diminishing returns in accuracy while massively increasing training time.
 
 ## 🚀 Getting Started
 Launch the notebook to mathematically witness how Bagging dramatically stabilizes complex algorithms:
