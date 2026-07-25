@@ -29,6 +29,12 @@ Because each tree is trained on slightly different data, they make completely di
 * **The Process:** While Bagging is famous for using Decision Trees (which leads to Random Forests), the `BaggingClassifier` can actually accept *any* algorithm. We instantiate a Bagging Classifier using `SVC` (Support Vector Classifier) as the base estimator.
 * **Key Finding:** We analyze the computational cost and accuracy differences when bagging non-tree algorithms. We learn that while Bagging mathematically reduces the variance of *high-variance* models (like Trees), applying it to highly stable models (like SVMs) often yields diminishing returns in accuracy while massively increasing training time.
 
+### 3. [`Bagging_Part-3.ipynb`](Bagging_Part-3.ipynb)
+**Goal:** Apply Bootstrap Aggregating to continuous numerical predictions using the `BaggingRegressor`.
+
+* **The Process:** We pivot from Classification to Regression by tackling the California Housing dataset. We train a `BaggingRegressor` using `DecisionTreeRegressor` as the base estimator.
+* **Key Finding:** Just as Bagging smooths out jagged classification boundaries, it mathematically smooths out the extreme, noisy predictions of standalone regression trees. By averaging hundreds of predicted numerical values, the ensemble drastically reduces the overall Mean Squared Error (MSE) and severely limits the impact of outliers.
+
 ## 🚀 Getting Started
 Launch the notebook to mathematically witness how Bagging dramatically stabilizes complex algorithms:
 ```bash
