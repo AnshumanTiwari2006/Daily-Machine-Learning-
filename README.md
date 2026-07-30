@@ -74,6 +74,9 @@ Optimizing algorithm parameters to squeeze maximum performance out of machine le
 Combining the mathematical predictions of multiple distinct models to create a single, vastly superior meta-model.
 - **[Voting Ensemble](./Voting-Ensemble/):** Utilizing the "wisdom of the crowd" through Hard Voting (majority rule), Soft Voting (probability averaging), and Regressor averaging to cancel out individual model weaknesses.
 - **[Bagging (Bootstrap Aggregating)](./Bagging/):** Reducing the variance of highly complex models (like Decision Trees) by training hundreds of parallel models on random sub-samples of the dataset and averaging their predictions.
+- **[Out-of-Bag (OOB) Evaluation](./OOB_Score/):** Using unselected Bootstrap samples as an internal validation set to evaluate Random Forest models without needing a separate validation dataset.
+- **[Feature Importance](./Feature_Importance/):** Understanding how models like Random Forests determine the importance of each feature by calculating impurity reduction across all decision trees.
+- **[AdaBoost (Adaptive Boosting)](./AdaBoost/):** An ensemble boosting technique that trains weak learners sequentially, adjusting sample weights after each iteration to emphasize previously misclassified data.
 
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
