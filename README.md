@@ -77,6 +77,7 @@ Combining the mathematical predictions of multiple distinct models to create a s
 - **[Out-of-Bag (OOB) Evaluation](./OOB_Score/):** Using unselected Bootstrap samples as an internal validation set to evaluate Random Forest models without needing a separate validation dataset.
 - **[Feature Importance](./Feature_Importance/):** Understanding how models like Random Forests determine the importance of each feature by calculating impurity reduction across all decision trees.
 - **[AdaBoost (Adaptive Boosting)](./AdaBoost/):** An ensemble boosting technique that trains weak learners sequentially, adjusting sample weights after each iteration to emphasize previously misclassified data.
+- **[Gradient Boosting](./Gradient_Boosting/):** An advanced boosting technique that builds models sequentially, each directly predicting and minimizing the residual errors of the previous ensemble.
 
 ## 💡 How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
