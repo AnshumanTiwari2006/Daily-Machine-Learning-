@@ -215,6 +215,18 @@ The weights are then normalized so that their sum equals 1.
 
 ---
 
+## 📂 Additional Modules
+
+### `AdaBoost_Part-2.ipynb`: Visualizing the Mathematics
+While the primary notebook builds the AdaBoost algorithm from scratch on a larger synthetic dataset, **Part 2** focuses on a highly visual, micro-dataset (only 10 data points) to trace the exact mathematical updates row-by-row.
+
+**Key Highlights:**
+- **Step-by-Step Visualization:** We use `mlxtend.plotting` to draw the exact 2D decision boundary of the first `DecisionTreeClassifier(max_depth=1)` (the "stump").
+- **Transparent Calculations:** We explicitly calculate the mathematical error of the stump, compute the `alpha` (model weight) using $\alpha = \frac{1}{2}\ln\left(\frac{1-\epsilon}{\epsilon}\right)$, and manually update the weight of every single row in the Pandas DataFrame using $e^{\alpha}$ (for misclassified points) or $e^{-\alpha}$ (for correctly classified points).
+- **Intuition over Code:** This notebook is designed to prove the exact mathematical mechanics behind AdaBoost in a completely transparent, step-by-step DataFrame execution, leaving no "black box" mystery.
+
+---
+
 ## How to Run
 
 1. Clone the repository
