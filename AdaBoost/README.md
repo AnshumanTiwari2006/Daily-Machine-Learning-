@@ -225,6 +225,14 @@ While the primary notebook builds the AdaBoost algorithm from scratch on a large
 - **Transparent Calculations:** We explicitly calculate the mathematical error of the stump, compute the `alpha` (model weight) using $\alpha = \frac{1}{2}\ln\left(\frac{1-\epsilon}{\epsilon}\right)$, and manually update the weight of every single row in the Pandas DataFrame using $e^{\alpha}$ (for misclassified points) or $e^{-\alpha}$ (for correctly classified points).
 - **Intuition over Code:** This notebook is designed to prove the exact mathematical mechanics behind AdaBoost in a completely transparent, step-by-step DataFrame execution, leaving no "black box" mystery.
 
+### `AdaBoost_Part-3.ipynb`: Training via Weighted Resampling
+In this notebook, we implement AdaBoost from scratch using a purely procedural, functional approach, but with one massive architectural difference: **Weighted Sampling**.
+
+**Key Highlights:**
+- **The Resampling Technique:** Not all machine learning algorithms natively support `sample_weight` parameters. To get around this, AdaBoost can physically alter the dataset before training the next learner. 
+- **Bootstrapping with Probabilities:** Instead of just passing weights to the model, we use `np.random.choice(replace=True, p=weights)` to actively pull a new, bootstrapped dataset where misclassified points have a mathematically higher chance of being drawn.
+- **The Result:** The next Decision Stump is forced to focus on the hard-to-predict data points simply because there are now multiple physical copies of them in the newly sampled training set!
+
 ---
 
 ## How to Run
