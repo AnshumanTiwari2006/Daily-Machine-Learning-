@@ -269,7 +269,240 @@ The notebook produces:
 
 ---
 
+
+````markdown
+# AdaBoost Hyperparameter Tuning
+
+This notebook demonstrates how to improve the performance of an **AdaBoost Classifier** using **GridSearchCV**. A synthetic non-linear dataset is generated, the classifier is trained, its decision boundary is visualized, and the optimal hyperparameters are identified through cross-validation.
+
+---
+
+## Objective
+
+The notebook aims to:
+
+- Generate a non-linear binary classification dataset.
+- Train an AdaBoost Classifier.
+- Evaluate the model using 10-fold cross-validation.
+- Visualize the decision boundary.
+- Perform hyperparameter tuning using GridSearchCV.
+- Identify the best combination of `n_estimators` and `learning_rate`.
+
+---
+
+## Dataset
+
+The notebook uses a synthetic dataset generated using Scikit-learn.
+
+### Dataset Generation
+
+```python
+make_circles(
+    n_samples=250,
+    factor=0.1,
+    noise=0.25,
+    random_state=42
+)
+```
+
+### Dataset Characteristics
+
+- Samples: 250
+- Features: 2
+- Classes: 2
+- Non-linear decision boundary
+- Added Gaussian noise for realism
+
+---
+
+## Libraries Used
+
+```python
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+mlxtend
+```
+
+Main Scikit-learn modules:
+
+- AdaBoostClassifier
+- make_circles
+- GridSearchCV
+- cross_val_score
+
+---
+
+## Workflow
+
+### 1. Generate the Dataset
+
+A synthetic circular dataset is generated using `make_circles()`.
+
+```python
+X, y = make_circles(...)
+```
+
+---
+
+### 2. Visualize the Dataset
+
+A scatter plot is created to observe the non-linear distribution of the two classes.
+
+---
+
+### 3. Train the AdaBoost Classifier
+
+An AdaBoost model is trained using the default hyperparameters.
+
+```python
+AdaBoostClassifier()
+```
+
+---
+
+### 4. Evaluate the Model
+
+The model performance is measured using **10-fold Cross Validation**.
+
+```python
+cross_val_score(
+    Ada,
+    X,
+    y,
+    cv=10,
+    scoring="accuracy"
+)
+```
+
+The average cross-validation accuracy is reported.
+
+---
+
+### 5. Plot the Decision Boundary
+
+The notebook visualizes how AdaBoost separates the two classes by plotting the learned decision boundary.
+
+This provides an intuitive understanding of the model's classification behavior.
+
+---
+
+### 6. Hyperparameter Tuning
+
+GridSearchCV is used to search for the best hyperparameter combination.
+
+The following parameters are explored:
+
+#### Number of Estimators
+
+```python
+50
+100
+250
+500
+```
+
+#### Learning Rate
+
+```python
+0.0001
+0.001
+0.01
+0.1
+1.0
+```
+
+The search is performed using:
+
+- 10-fold Cross Validation
+- Accuracy as the evaluation metric
+
+---
+
+### 7. Best Model Selection
+
+After evaluating every parameter combination, GridSearchCV reports:
+
+- Best Cross-Validation Accuracy
+- Best Hyperparameter Combination
+
+---
+
+## What is Hyperparameter Tuning?
+
+Hyperparameter tuning is the process of searching for the combination of model parameters that produces the best predictive performance.
+
+Unlike model parameters learned during training, hyperparameters are specified before training begins.
+
+For AdaBoost, the two most important hyperparameters are:
+
+- `n_estimators` – Number of weak learners.
+- `learning_rate` – Contribution of each weak learner to the final model.
+
+Finding an appropriate balance between these values helps improve model performance while reducing overfitting.
+
+---
+
+## Concepts Covered
+
+- AdaBoost Classifier
+- Ensemble Learning
+- Boosting
+- Decision Boundaries
+- Cross Validation
+- Grid Search
+- Hyperparameter Tuning
+- Learning Rate
+- Number of Estimators
+- Model Selection
+
+---
+
+## How to Run
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+2. Install the required libraries
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn mlxtend
+```
+
+3. Open the notebook
+
+```bash
+jupyter notebook AdaBoost_Part-4.ipynb
+```
+
+---
+
+## Expected Output
+
+The notebook produces:
+
+- Visualization of the generated dataset.
+- Average 10-fold cross-validation accuracy.
+- Decision boundary of the AdaBoost classifier.
+- Best hyperparameter combination.
+- Best cross-validation accuracy obtained using GridSearchCV.
+
+---
+
 ## License
 
 This project is intended for educational purposes as part of a Machine Learning learning series.
 ````
+
+
+## License
+
+This project is intended for educational purposes as part of a Machine Learning learning series.
+````
+
+
