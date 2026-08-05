@@ -215,4 +215,4 @@ The notebook produces:
 
 ## License
 
-This project is intended for educational purposes as part of a Machine Learning learning series.
+This project is intended for educational purposes as part of a Machine Learning learning series. Good code, lol !
