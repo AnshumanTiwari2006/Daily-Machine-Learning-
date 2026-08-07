@@ -233,6 +233,14 @@ In this notebook, we implement AdaBoost from scratch using a purely procedural, 
 - **Bootstrapping with Probabilities:** Instead of just passing weights to the model, we use `np.random.choice(replace=True, p=weights)` to actively pull a new, bootstrapped dataset where misclassified points have a mathematically higher chance of being drawn.
 - **The Result:** The next Decision Stump is forced to focus on the hard-to-predict data points simply because there are now multiple physical copies of them in the newly sampled training set!
 
+### `AdaBoost_Part-4.ipynb`: Handling Non-Linear Data
+In this module, we transition from manual implementations to using Scikit-learn's built-in `AdaBoostClassifier` to demonstrate how boosting can overcome the limitations of weak learners on non-linearly separable data.
+
+**Key Highlights:**
+- **Non-Linear Dataset:** We use `make_circles(noise=0.25)` to generate a complex, non-linear dataset where a single linear decision boundary (a stump) would completely fail.
+- **Ensemble Power:** By training an AdaBoost ensemble, we visualize how combining multiple Decision Stumps allows the model to approximate a circular, non-linear decision boundary.
+- **Hyperparameter Tuning:** We utilize `GridSearchCV` to rigorously explore optimal combinations of `n_estimators` and `learning_rate`, maximizing the classification accuracy of the ensemble to ~88.8%.
+
 ---
 
 ## How to Run
@@ -246,13 +254,13 @@ git clone <repository-url>
 2. Install dependencies
 
 ```bash
-pip install numpy pandas scikit-learn
+pip install numpy pandas scikit-learn mlxtend matplotlib seaborn
 ```
 
 3. Open the notebook
 
 ```bash
-jupyter notebook AdaBoost.ipynb
+jupyter notebook
 ```
 
 ---
@@ -266,6 +274,12 @@ The notebook produces:
 - Alpha values for each estimator.
 - Final predictions using weighted voting.
 - Accuracy, Precision, Recall, F1 Score, ROC-AUC Score, and Confusion Matrix.
+
+---
+
+## License
+
+This project is intended for educational purposes as part of a Machine Learning learning series.
 
 ---
 
