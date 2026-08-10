@@ -61,7 +61,7 @@ $$ F_M(x) = F_0(x) + \eta \sum_{m=1}^M \gamma_m h_m(x) $$
 In the accompanying notebook `Gradient_Boosting.ipynb`, you will find:
 1. **Mathematical Validation**: A step-by-step custom implementation of Gradient Boosting for Regression using raw Decision Trees to predict residuals.
 2. **Scikit-Learn Implementation**: Using `GradientBoostingRegressor` and `GradientBoostingClassifier` on real datasets.
-3. **Hyperparameter Tuning**: Visualizing the effect of the learning rate and number of estimators on model fit.
+3. **Hyperparameter Tuning**: Visualizing the effect of the learning rate and number of estimators on model fit....
 
 ---
 *“Gradient Boosting gives you the power to optimize any differentiable loss function, turning a series of weak learners into an incredibly powerful predictive engine.”*
