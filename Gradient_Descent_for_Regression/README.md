@@ -1,8 +1,8 @@
-# 📉 Gradient Descent for Regression
+# Gradient Descent for Regression
 
 Welcome to the **Gradient Descent** module! This folder contains three Jupyter Notebooks where we break down the mathematics of Gradient Descent and build custom Python classes to replicate the behavior of `scikit-learn`'s Linear Regression models.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`Gradient_Descent.ipynb`](Gradient_Descent.ipynb)
 **Goal:** Build a full Gradient Descent optimizer from scratch to find both the slope (`m`) and intercept (`b`).
@@ -21,7 +21,7 @@ Welcome to the **Gradient Descent** module! This folder contains three Jupyter N
 * **Custom Implementation:** We build another `GradientRegressor` class, but this time we **hardcode the slope** (`m = 53.15`) and use Gradient Descent to find *only* the intercept `b`.
 * **Result:** Starting from a terrible initial guess of `b = -100`, the notebook prints the loss slope and the updated `b` value at every single step for 100 epochs, demonstrating exactly how the steps get smaller as `b` converges beautifully to `1.01313`.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebooks to see the custom classes and the math in action:
 ```bash
 jupyter notebook
