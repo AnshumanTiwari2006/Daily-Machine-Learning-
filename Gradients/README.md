@@ -1,8 +1,8 @@
-# 📉 Gradient Descent Optimization Algorithms
+# Gradient Descent Optimization Algorithms
 
 Welcome to the **Gradient Descent** module! This directory explores the core optimization engine that powers almost all modern machine learning and deep learning models.
 
-## 🎯 Overview
+## Overview
 
 Gradient Descent is a first-order iterative optimization algorithm used to minimize a cost function (e.g., Mean Squared Error) and discover the optimal parameters (weights and biases) for a model. It achieves this by taking iterative steps in the opposite direction of the mathematical gradient.
 
@@ -13,7 +13,7 @@ Where:
 - $\alpha$ is the **Learning Rate**, controlling the size of the step.
 - $\nabla J(\theta)$ is the gradient (derivative) of the cost function $J$ with respect to the parameters.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`Batch_&__Mini_Batch_&_Stochastic_GD.ipynb`](Batch_%26__Mini_Batch_%26_Stochastic_GD.ipynb)
 This comprehensive notebook builds a custom `UniversalGD` class from scratch, elegantly unifying the three major variations of Gradient Descent into a single framework.
@@ -43,7 +43,7 @@ This comprehensive notebook builds a custom `UniversalGD` class from scratch, el
 * Unpacks the manual calculation of the intercept derivative `(-2 * np.mean(y_train - y_hat))` and coefficient derivatives `(-2 * np.dot((y_train - y_hat), X_train) / N)`.
 * Provides a baseline $R^2$ score comparison to prove the raw mathematics align with production-level libraries.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the unified notebook to explore the algorithms side-by-side:
 ```bash
 jupyter notebook "Batch_&__Mini_Batch_&_Stochastic_GD.ipynb"
