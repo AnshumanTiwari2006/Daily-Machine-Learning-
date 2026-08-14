@@ -1,51 +1,51 @@
-# 🚀 Daily Machine Learning Journey
+# Daily Machine Learning Journey
 
 Welcome to my **Daily Machine Learning** repository! I am a B.Tech graduate actively deep-diving into the mathematical foundations, theories, and code implementations of Machine Learning algorithms. 
 
 This repository serves as my personal pedagogical knowledge base. It contains Jupyter notebooks, from-scratch algorithmic implementations, and semi-detailed theory notes covering my daily learnings.
 
-## 🎯 Repository Philosophy
+## Repository Philosophy
 My goal here is not just to call `model.fit()` and `model.predict()` using out-of-the-box libraries, but to genuinely understand **how** and **why** these algorithms work under the hood. 
 
 Across these folders, you'll find:
-- 🧮 **Mathematical Theory:** Breakdowns of core formulas, cost functions, and update rules.
-- 🛠️ **From-Scratch Implementations:** Building algorithms from the ground up (often using raw NumPy) to prove the underlying mathematics.
-- 🚀 **Scikit-Learn Comparisons:** Benchmarking my custom implementations against production-level libraries to validate accuracy and performance.
+-  **Mathematical Theory:** Breakdowns of core formulas, cost functions, and update rules.
+-  **From-Scratch Implementations:** Building algorithms from the ground up (often using raw NumPy) to prove the underlying mathematics.
+-  **Scikit-Learn Comparisons:** Benchmarking my custom implementations against production-level libraries to validate accuracy and performance.
 
-## 📂 Repository Structure
+## Repository Structure
 
-### 📉 1. Optimization Algorithms
+### 1. Optimization Algorithms
 The core engines that power modern machine learning and deep learning models.
 - **[Gradients](./Gradients/):** The foundation of optimization. Covers Batch Gradient Descent, Stochastic Gradient Descent (SGD), and Mini-Batch Gradient Descent implementations from scratch.
 - **[Gradient Descent for Regression](./Gradient_Descent_for_Regression/):** Applying the Gradient Descent mathematical update rules specifically to solve regression problems.
 
-### 📈 2. Regression Techniques
+### 2. Regression Techniques
 Predicting continuous values through various linear and non-linear models.
 - **[Linear Regression](./Linear_Regression/):** The starting point. Predicting a target variable using a single continuous feature.
 - **[Multiple Regression](./Multiple_Regression/):** Extending core linear concepts to handle multiple independent variables.
 - **[Polynomial Regression](./Polynomial_Regression/):** Modeling non-linear relationships by transforming features into higher-degree polynomial spaces.
 
-### 🛡️ 3. Regularization Methods
+### 3. Regularization Methods
 Taming model complexity to prevent overfitting and improve generalization on unseen data.
 - **[Ridge Regression](./Ridge_Regression/):** Applying L2 regularization to cleanly shrink coefficients and handle multicollinearity.
 - **[Lasso Regression](./Lasso_Regression/):** Applying L1 regularization for simultaneous coefficient shrinkage and automated feature selection.
 - **[ElasticNet Regression](./ElasticNet_Regression/):** The highly effective hybrid approach combining both L1 and L2 penalties.
 
-### 🔮 4. Classification Models
+### 4. Classification Models
 Adapting regression principles to predict distinct, categorical outcomes.
 - **[Logistic Regression](./Logistic_Regression/):** Explores the journey from primitive Perceptrons and Step Functions to the modern Sigmoid curve for binary classification probabilities.
 - **[Softmax Regression](./Softmax_Regression/):** (Multinomial Logistic Regression) Generalizing Logistic Regression to elegantly classify data into multiple, mutually exclusive categories.
 - **[K-Nearest Neighbors (KNN)](./KNN/):** A highly intuitive, distance-based algorithm relying on geometric proximity and strict feature scaling to classify data points based on their 'K' closest neighbors.
 - **[Decision Trees](./Decision_Tree/):** A non-linear, highly interpretable algorithm that mathematically partitions data using recursive "If-Else" rules based on Gini Impurity and Entropy.
 
-### 📏 5. Evaluation & Metrics
+### 5. Evaluation & Metrics
 - **[Regression Metrics](./Regression_Metrics/):** Exploring the mathematical intuition and practical code behind measuring model success, including $R^2$ Score, MAE, MSE, and RMSE.
 - **[Classification Metrics](./Metrics/):** Understanding how to evaluate classification models using Accuracy, the Confusion Matrix, and differentiating between Type I (False Positive) and Type II (False Negative) errors.
 - **[ROC Curve & AUC](./ROC_Curve/):** Visualizing and quantifying a model's ability to distinguish between classes across all possible classification thresholds.
 
 
 
-### 🧹 6. Data Preprocessing & Feature Engineering
+### 6. Data Preprocessing & Feature Engineering
 Preparing raw data for robust machine learning models.
 - **[Data Ingestion & Formats](./Working_with_Different_Format/):** Parsing and extracting raw data from APIs (JSON), relational databases (SQL), and complex CSV files into flat Pandas DataFrames.
 - **[Web Scraping](./WebScrapping/):** Harvesting custom datasets directly from the internet by parsing raw HTML using the `requests` and `BeautifulSoup` libraries.
@@ -62,15 +62,15 @@ Preparing raw data for robust machine learning models.
 - **[Pipelines](./Pipeline/):** Architecting end-to-end, leak-proof machine learning workflows that seamlessly chain preprocessing transformers (Imputation, Scaling, Encoding) directly into predictive models.
 
 
-### 🗜️ 7. Dimensionality Reduction
+### 7. Dimensionality Reduction
 Techniques for compressing high-dimensional data while retaining critical information.
 - **[Principal Component Analysis (PCA)](./Principal%20Component%20Analysis/):** Reducing feature space to combat the curse of dimensionality, vastly speeding up algorithms like KNN on complex datasets (e.g., Image processing).
 
-### 🎛️ 8. Hyperparameter Tuning
+### 8. Hyperparameter Tuning
 Optimizing algorithm parameters to squeeze maximum performance out of machine learning models.
 - **[GridSearchCV](./GridSearchCV/):** Automating the exhaustive search over specified parameter values for an estimator, using Cross-Validation to ensure robust performance without data leakage.
 
-### 🤝 9. Ensemble Learning
+### 9. Ensemble Learning
 Combining the mathematical predictions of multiple distinct models to create a single, vastly superior meta-model.
 - **[Voting Ensemble](./Voting-Ensemble/):** Utilizing the "wisdom of the crowd" through Hard Voting (majority rule), Soft Voting (probability averaging), and Regressor averaging to cancel out individual model weaknesses.
 - **[Bagging (Bootstrap Aggregating)](./Bagging/):** Reducing the variance of highly complex models (like Decision Trees) by training hundreds of parallel models on random sub-samples of the dataset and averaging their predictions.
@@ -79,7 +79,7 @@ Combining the mathematical predictions of multiple distinct models to create a s
 - **[AdaBoost (Adaptive Boosting)](./AdaBoost/):** An ensemble boosting technique that trains weak learners sequentially, adjusting sample weights after each iteration to emphasize previously misclassified data.
 - **[Gradient Boosting](./Gradient_Boosting/):** An advanced boosting technique that builds models sequentially, each directly predicting and minimizing the residual errors of the previous ensemble.
 
-## 💡 How to Use This Repository
+## How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
 
 To explore a topic, navigate to its folder, read the theoretical README, and launch the `.ipynb` files to see the math translated directly into code!
