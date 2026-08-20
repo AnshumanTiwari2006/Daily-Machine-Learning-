@@ -1,10 +1,10 @@
-# 🛍️ Ensemble Learning: Bagging (Bootstrap Aggregating)
+# Ensemble Learning: Bagging (Bootstrap Aggregating)
 
 Welcome to the **Bagging** module! While a basic Voting Ensemble combines completely different algorithms (like KNN + SVM + Logistic Regression), Bagging takes a different approach: it combines hundreds of the *exact same* algorithm (usually Decision Trees) to create a highly accurate, robust model.
 
 This directory dives into the mechanics of **Bootstrap Aggregating (Bagging)**, which forms the mathematical foundation of incredibly powerful algorithms like the Random Forest.
 
-## 🎯 Overview
+## Overview
 
 Decision Trees are highly interpretable and mathematically powerful, but they suffer from one massive flaw: **High Variance (Overfitting)**. If you change just a few rows of training data, the entire structure of the tree changes wildly. 
 
@@ -14,7 +14,7 @@ Decision Trees are highly interpretable and mathematically powerful, but they su
 
 Because each tree is trained on slightly different data, they make completely different mathematical errors. When we average them all together, those individual errors cancel out, drastically reducing the model's variance without sacrificing accuracy.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`Bagging_Part-1.ipynb`](Bagging_Part-1.ipynb)
 **Goal:** Build and analyze a Bagging Classifier using Scikit-Learn to prove how it fundamentally dominates standalone models.
@@ -35,7 +35,7 @@ Because each tree is trained on slightly different data, they make completely di
 * **The Process:** We pivot from Classification to Regression by tackling the California Housing dataset. We train a `BaggingRegressor` using `DecisionTreeRegressor` as the base estimator.
 * **Key Finding:** Just as Bagging smooths out jagged classification boundaries, it mathematically smooths out the extreme, noisy predictions of standalone regression trees. By averaging hundreds of predicted numerical values, the ensemble drastically reduces the overall Mean Squared Error (MSE) and severely limits the impact of outliers.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebook to mathematically witness how Bagging dramatically stabilizes complex algorithms:
 ```bash
 jupyter notebook "Bagging_Part-1.ipynb"
