@@ -21,6 +21,12 @@ While standard Gradient Boosting builds trees sequentially to correct the errors
   - Execution: `tree_method="hist"`, `device="cpu"`
 - **Result:** We predict the labels on the test set, evaluate the model using `accuracy_score`, print a visual text dump of the very first decision tree in the ensemble, and extract `feature_importances_` to see which features contributed the most to the predictions.
 
+### 2. [`XGBoost_Part-2.ipynb`](XGBoost_Part-2.ipynb)
+**Goal:** Deep dive into the mathematical intuition of XGBoost for Regression tasks.
+- **The Process:** Using a custom, highly interpretable toy dataset (predicting `Package` based on `CGPA`, `Attendance`, and `Projects`), we manually dissect how XGBoost builds regression trees step-by-step.
+- **Mathematical Validation:** We configure a highly restricted `XGBRegressor` (`n_estimators=3`, `max_depth=2`) and manually recreate its internal mathematical operations. This includes calculating initial predictions (base score), computing residuals, finding the optimal splits using Similarity Scores and Gain, and determining the final leaf output values with regularization parameters.
+- **Result:** Demonstrates mathematically exactly how XGBoost arrives at its predictions and how parameters like `reg_lambda` (L2 regularization) directly affect the tree structures and outputs.
+
 ## Key Hyperparameters Demonstrated
 
 1. **`reg_alpha` & `reg_lambda`**: L1 (Lasso) and L2 (Ridge) regularization terms on the leaf weights to prevent overfitting.

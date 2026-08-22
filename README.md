@@ -78,6 +78,7 @@ Combining the mathematical predictions of multiple distinct models to create a s
 - **[Feature Importance](./Feature_Importance/):** Understanding how models like Random Forests determine the importance of each feature by calculating impurity reduction across all decision trees.
 - **[AdaBoost (Adaptive Boosting)](./AdaBoost/):** An ensemble boosting technique that trains weak learners sequentially, adjusting sample weights after each iteration to emphasize previously misclassified data.
 - **[Gradient Boosting](./Gradient_Boosting/):** An advanced boosting technique that builds models sequentially, each directly predicting and minimizing the residual errors of the previous ensemble.
+- **[XGBoost (Extreme Gradient Boosting)](./XGBoost/):** A highly optimized, scalable version of Gradient Boosting that introduces parallel processing, cache awareness, and advanced L1/L2 regularization to prevent overfitting.
 
 ## How to Use This Repository
 Each specific topic folder is fully modular and contains its own dedicated, deep-dive `README.md` alongside the Jupyter Notebooks. 
