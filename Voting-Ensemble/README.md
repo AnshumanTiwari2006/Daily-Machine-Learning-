@@ -1,10 +1,10 @@
-# 🗳️ Ensemble Learning: Voting Ensembles
+# Ensemble Learning: Voting Ensembles
 
 Welcome to the **Voting Ensemble** module! In Machine Learning, a single algorithm (like a standalone Decision Tree or Logistic Regression) often has inherent mathematical weaknesses or biases. But what if we could combine the predictions of multiple, completely different algorithms so that they seamlessly cover each other's blind spots?
 
 This directory explores the foundation of **Ensemble Learning**—specifically the Voting methodology—where multiple diverse models come together to make a final, highly robust prediction.
 
-## 🎯 Overview
+## Overview
 
 The core mathematical philosophy of an Ensemble is simple: *"The wisdom of the crowd is far greater than the wisdom of a single expert."* 
 
@@ -13,7 +13,7 @@ Voting Ensembles work by actively training multiple independent models (e.g., KN
 2. **Soft Voting (Classification):** Instead of casting distinct votes, models output their *probabilities* (e.g., Model A is 90% sure it's a dog). The ensemble mathematically averages these exact probabilities and picks the highest one. This correctly gives heavier weight to highly confident models.
 3. **Voting Regressor:** For continuous numerical predictions (like forecasting house prices), every model predicts a raw number, and the ensemble simply calculates the arithmetic average (mean) of all predictions.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`Voting_Ensemble.ipynb`](Voting_Ensemble.ipynb)
 **Goal:** Prove that combining individual, weaker classification models yields a vastly superior, highly accurate meta-model.
@@ -27,7 +27,7 @@ Voting Ensembles work by actively training multiple independent models (e.g., KN
 * **The Ensemble:** We wrap them inside Scikit-Learn's `VotingRegressor`. Instead of a majority vote, it outputs the exact mathematical average of all predictions.
 * **Key Finding:** By averaging the predictions, the ensemble effectively smooths out the severe, wild errors of any single model, leading to a much stronger $R^2$ score and significantly tighter variance on unseen data.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebooks to learn how to chain algorithms together and instantly boost your predictive power:
 ```bash
 jupyter notebook "Voting_Ensemble.ipynb"
