@@ -1,8 +1,8 @@
-# 📉 Elastic Net Regression: The Best of Both Worlds
+# Elastic Net Regression: The Best of Both Worlds
 
 Welcome to the **Elastic Net Regression** module! This folder brings together everything we've learned so far by combining the concepts of L1 Regularization (Lasso) and L2 Regularization (Ridge) into a single, powerful model.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### [`ElasticNet_Regression.ipynb`](ElasticNet_Regression.ipynb)
 **Goal:** Compare all four major regression techniques side-by-side to see how Elastic Net performs.
@@ -20,7 +20,7 @@ Welcome to the **Elastic Net Regression** module! This folder brings together ev
   * *The Magic:* The `l1_ratio=0.9` tells the model to use 90% Lasso penalty and 10% Ridge penalty. This allows the model to perform aggressive feature selection (like Lasso) while still maintaining the stability and grouping effects of Ridge Regression. 
   * *The Result:* Elastic Net slightly edges out all other models, proving that combining regularization techniques often yields the most robust predictions!
 
-## 🚀 Getting Started
+## Getting Started
 Open the notebook to see the ultimate regression showdown:
 ```bash
 jupyter notebook

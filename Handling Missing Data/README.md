@@ -1,17 +1,17 @@
-# 🕳️ Handling Missing Data
+# Handling Missing Data
 
 Welcome to the **Handling Missing Data** module! Real-world datasets are notoriously messy, and perhaps the single most common issue you will face as a Data Scientist is missing values (`NaN`s). Because almost no machine learning algorithms (like Linear Regression or Support Vector Machines) can inherently process mathematical operations on a `NaN` value, we must have robust strategies to deal with them before we can even begin training.
 
 This directory provides a comprehensive deep-dive into how to analyze, clean, and mathematically impute missing data across both numerical and categorical features.
 
-## 🎯 Overview
+## Overview
 
 There are broadly two paths when encountering missing data: **Delete it** or **Guess it (Impute it).** 
 
 1. **Deletion (CCA):** Dropping rows or columns entirely. This is only statistically safe if the data is Missing Completely At Random (MCAR) and the missing percentage is very small (usually $< 5\%$).
 2. **Imputation:** Mathematically estimating what the missing value *should* have been using simple statistical techniques (like Mean/Median), algorithmic modeling (KNN, Iterative), or randomized sampling.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. Deletion Strategies
 * **[`Handling Missing Data Complete Case Analysis.ipynb`](Handling%20Missing%20Data%20Complete%20Case%20Analysis.ipynb)**
@@ -34,7 +34,7 @@ There are broadly two paths when encountering missing data: **Delete it** or **G
 * **[`Handling Missing Data via Iterative Imputation.ipynb`](Handling%20Missing%20Data%20via%20Iterative%20Imputation.ipynb)**
   * (Also known as MICE - Multivariate Imputation by Chained Equations). Treats the missing feature column as a target variable ($y$) and uses all other features ($X$) to predict and fill the missing value via regression models. This is historically the most robust method for complex datasets.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebooks to explore how to rescue incomplete datasets:
 ```bash
 jupyter notebook "Handling Missing Data Complete Case Analysis.ipynb"

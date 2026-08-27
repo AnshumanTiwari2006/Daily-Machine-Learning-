@@ -1,17 +1,17 @@
-# 🔠 Encoders: Handling Categorical Data
+# Encoders: Handling Categorical Data
 
 Welcome to the **Encoders** module! Machine learning models are fundamentally mathematical algorithms—they only understand numbers. When working with real-world datasets, we frequently encounter categorical (text-based) data like "Red", "Blue", or "High", "Medium", "Low".
 
 This directory focuses on exactly how to mathematically translate these text-based categories into numeric formats that machine learning algorithms can successfully process, without accidentally introducing false numerical relationships.
 
-## 🎯 Overview
+## Overview
 
 Categorical data generally falls into two distinct types, and each requires a specific encoding strategy:
 
 1. **Ordinal Data:** Categories that have a strict, logical order or ranking (e.g., *Poor < Average < Excellent*). We use **Ordinal Encoding** to assign increasing integers that preserve this mathematical hierarchy.
 2. **Nominal Data:** Categories with absolutely no inherent mathematical order (e.g., *Red, Green, Blue* or *New York, London, Tokyo*). We use **One-Hot Encoding** to prevent the model from assuming that *Tokyo (3)* is mathematically larger or "better" than *New York (1)*.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`(Ordinal)Encoding Categorical Data.ipynb`](%28Ordinal%29Encoding%20Categorical%20Data.ipynb)
 **Goal:** Translate ordered text features into ordered integers.
@@ -27,7 +27,7 @@ Categorical data generally falls into two distinct types, and each requires a sp
 * **The Dummy Variable Trap:** Creating a column for every single category introduces perfect multicollinearity (e.g., if a coin is not Heads, it *must* be Tails; we don't need two columns to represent this). We learn how to mathematically resolve this by dropping the first column (`drop='first'`).
 * **Implementation:** We compare the quick, exploratory Pandas approach (`pd.get_dummies()`) against Scikit-Learn's highly robust, pipeline-ready `OneHotEncoder`.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebooks to master how to feed categorical text data into mathematical models:
 ```bash
 jupyter notebook "One Hot Encoding.ipynb"
