@@ -1,10 +1,10 @@
-# 🔄 Data Transformers
+# Data Transformers
 
 Welcome to the **Transformers** module! In real-world datasets, raw data is rarely perfect. Features often exhibit heavy skewed distributions (right or left skew) rather than a clean normal distribution, and different columns inherently require entirely different preprocessing steps.
 
 This directory explores how to mathematically transform data to make it Gaussian (normally distributed) and how to architect clean, scalable preprocessing pipelines using Scikit-Learn's transformation ecosystem.
 
-## 🎯 Overview
+## Overview
 
 Mathematical transformations are deeply crucial because many parametric machine learning algorithms (like Linear Regression, Logistic Regression, and Artificial Neural Networks) inherently assume that the input data follows a normal (Gaussian) distribution. If the data violates this assumption, model performance degrades.
 
@@ -13,7 +13,7 @@ In this module, we cover:
 2. **Power Transformers:** Using advanced, parameterized algorithmic transformations (like Box-Cox and Yeo-Johnson) to aggressively force stubborn data into a normal distribution.
 3. **Column Transformers:** Designing robust, modular pipelines that map distinct preprocessing techniques to specific columns concurrently.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### 1. [`Function Transformer.ipynb`](Function%20Transformer.ipynb)
 **Goal:** Manually apply simple, explicit mathematical functions to correct minor to moderate skewness.
@@ -35,7 +35,7 @@ In this module, we cover:
 * **The Problem:** In a standard dataset, an `Age` column might require SimpleImputer + StandardScaler, a `Gender` column might require OneHotEncoder, and a `Salary` column might require a PowerTransformer. Doing this sequentially in Pandas is messy and leads to data leakage.
 * **The Solution:** We implement Scikit-Learn's `ColumnTransformer` to route distinct columns through specific, parallel transformation pipelines, ultimately concatenating the outputs into a single, model-ready matrix array...
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebooks to master data transformations and pipeline architecture:
 ```bash
 jupyter notebook "Column_Transformer_Cleaned.ipynb"
