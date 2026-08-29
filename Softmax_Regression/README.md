@@ -1,8 +1,8 @@
-# 🌸 Softmax Regression (Multinomial Logistic Regression)
+# Softmax Regression (Multinomial Logistic Regression)
 
 Welcome to the **Softmax Regression** module! This folder explores how to extend binary classification to handle multiple distinct classes simultaneously without resorting to multiple independent binary models.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### [`Softmax_Regression.ipynb`](Softmax_Regression.ipynb)
 
@@ -23,7 +23,7 @@ Welcome to the **Softmax Regression** module! This folder explores how to extend
   * We encode the string labels to integers and utilize the `mlxtend` library's `plot_decision_regions` to vividly map out the classification zones.
   * *Takeaway:* The resulting plot demonstrates how the algorithm maps out intersecting linear decision boundaries, effectively carving out distinct territorial regions for each of the three species in the feature space.
 
-## 🚀 Getting Started
+## Getting Started
 To run the notebook and see the multi-class decision boundaries, ensure you have the required libraries installed:
 ```bash
 pip install mlxtend scikit-learn pandas numpy matplotlib seaborn
