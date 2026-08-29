@@ -1,9 +1,9 @@
-# 📉 Ridge Regression (Part 1): Introduction with Scikit-Learn
+# Ridge Regression (Part 1): Introduction with Scikit-Learn
 
-## 📂 Overview
+## Overview
 This notebook serves as a gentle introduction to Ridge Regression (L2 Regularization) using `scikit-learn`. It demonstrates how Ridge Regression helps penalize large coefficients compared to standard Ordinary Least Squares (OLS) Linear Regression.
 
-## 🧠 Key Concepts & Implementations
+## Key Concepts & Implementations
 - **Dataset:** We use the `diabetes` dataset from `sklearn.datasets`, which contains multiple features, making it a great candidate for regularization.
 - **Linear Regression Baseline:** We first train a standard `LinearRegression()` model to establish a baseline $R^2$ score and observe its unpenalized coefficients.
 - **Ridge Regression:** We train a `Ridge(alpha=0.001)` model and compare it to the baseline.
