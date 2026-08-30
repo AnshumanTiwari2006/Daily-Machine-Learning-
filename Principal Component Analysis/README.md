@@ -1,17 +1,17 @@
-# 📉 Principal Component Analysis (PCA)
+# Principal Component Analysis (PCA)
 
 Welcome to the **Principal Component Analysis (PCA)** module! Working with high-dimensional data (like images) can drastically slow down machine learning algorithms and lead to the dreaded "curse of dimensionality."
 
 This directory explores PCA, an incredibly powerful unsupervised mathematical technique used to reduce the number of features in a dataset while retaining as much of the critical variance (information) as possible.
 
-## 🎯 Overview
+## Overview
 
 PCA works by identifying the "principal components" of the data—new, uncorrelated variables that successively maximize variance. 
 * **Dimensionality Reduction:** It compresses data from hundreds or thousands of features into a much smaller, dense feature space.
 * **Feature Extraction:** It doesn't just arbitrarily drop columns; it mathematically transforms and projects existing columns into new, optimized components.
 * **Performance Boost:** By heavily reducing the dimensions, distance-based algorithms like K-Nearest Neighbors (KNN) can run significantly faster without sacrificing much accuracy.
 
-## 📂 Contents & Findings
+## Contents & Findings
 
 ### [`PCA on Digit Recognizer.ipynb`](PCA%20on%20Digit%20Recognizer.ipynb)
 **Goal:** Prove the power of PCA by compressing 784 raw pixel features of handwritten digits and observing the impact on a KNN classifier.
@@ -28,7 +28,7 @@ PCA works by identifying the "principal components" of the data—new, uncorrela
   * The accuracy remains remarkably high (~95.0%), but the computational speed is vastly improved.
   * We also loop through various `n_components` (from 1 to 20) to print the accuracy at each step, clearly showing how quickly the model regains its predictive power as critical principal components are added.
 
-## 🚀 Getting Started
+## Getting Started
 Launch the notebook to explore how PCA handles and compresses high-dimensional image data:
 ```bash
 jupyter notebook "PCA on Digit Recognizer.ipynb"
