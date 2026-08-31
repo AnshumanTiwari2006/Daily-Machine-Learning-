@@ -29,3 +29,4 @@ To run the notebook and see the multi-class decision boundaries, ensure you have
 pip install mlxtend scikit-learn pandas numpy matplotlib seaborn
 jupyter notebook Softmax_Regression.ipynb
 ```
+Do Share it and help to send more codes like this.
