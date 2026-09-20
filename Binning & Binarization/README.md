@@ -32,3 +32,5 @@ Launch the notebooks to explore how to discretize continuous features before tra
 ```bash
 jupyter notebook "Binning & Binarization.ipynb"
 ```
+
+You could also try using the Dataset and upload your file here too......
